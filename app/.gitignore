@@ -1,0 +1,14 @@
+sqlite-trace.log
+./sql/admin/90_data.sql
+./tenant_db/1.db
+java
+node
+perl
+php
+public.pem
+python
+ruby
+rust
+tenant_db
+*.yml
+!*go.yml
