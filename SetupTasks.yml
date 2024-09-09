@@ -136,12 +136,12 @@ tasks:
   register-alias:
     internal: true
     cmds:
-      - echo '### INSERTED BY register-alias ###' >> ~/.bashrc
+      - "echo '### INSERTED BY register-alias ###' >> ~/.bashrc"
       - for:
           var: ALIAS
         cmd: echo 'alias {{.ITEM}}' >> ~/.bashrc
     status:
-      - grep -q '### INSERTED BY register-alias ###' ~/.bashrc
+      - "grep -q '### INSERTED BY register-alias ###' ~/.bashrc"
 
   webapp-symlink:
     internal: true
