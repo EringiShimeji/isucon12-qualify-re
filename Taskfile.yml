@@ -4,7 +4,7 @@ version: "3"
 
 vars:
   # Frequently changed
-  SERVICES: mysql nginx
+  SERVICES: mysql nginx isuports
 
   # Rarely changed
   REPO_DIR:
