@@ -1617,7 +1617,9 @@ func initializeHandler(c echo.Context) error {
 		return fmt.Errorf("error exec.Command: %s %e", string(out), err)
 	}
 
-	http.Get("http://localhost:9000/api/group/collect")
+	if _, err := http.Get("http://localhost:9000/api/group/collect"); err != nil {
+		return fmt.Errorf("error pprotein: %e", err)
+	}
 
 	res := InitializeHandlerResult{
 		Lang: "go",
